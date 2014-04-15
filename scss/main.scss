@@ -32,8 +32,8 @@ a.comments{
 
 div.post{
   position: relative;
-  background: darken($grey, 10%);
-  border-top: 1px solid darken($grey, 0%);
+  background: darken($grey, 5%);
+  border-top: 2px solid lighten($grey, 2%);
   border-bottom: 2px solid darken($grey, 25%);
   padding: 5px 5px 0 15px;
   min-height: 85px;
@@ -60,11 +60,10 @@ margin: 0 auto;
 }
 
 h1{
-  font-family: "helvetica neue", "Open Sans", helvetica, verdana, sans-serf;
-  letter-spacing: .12rem;
+  font-family: "Droid Sans Mono", "Open Sans", helvetica, verdana, sans-serf;
   font-size: 30px;
   font-weight: 200;
-  color: $clouds;
+  color: white;
 
   @include breakpoint(baby-bear) {
     font-size: 18px;

@@ -3,7 +3,7 @@
 	Sass Minifest
 
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -280,7 +280,7 @@
   color: #a94442; }
 
 html {
-  font-family: "Open Sans", helvetica, verdana, sans-serf;
+  font-family: "Droid Sans Mono", helvetica, verdana, sans-serf;
   font-size: 16px;
   line-height: 24px; }
 
@@ -1755,8 +1755,8 @@ a.comments {
 
 div.post {
   position: relative;
-  background: #121010;
-  border-top: 1px solid #2d2828;
+  background: #201c1c;
+  border-top: 2px solid #322d2d;
   border-bottom: 2px solid black;
   padding: 5px 5px 0 15px;
   min-height: 85px; }
@@ -1778,11 +1778,10 @@ div.post {
   min-height: 35px; }
 
 h1 {
-  font-family: "helvetica neue", "Open Sans", helvetica, verdana, sans-serf;
-  letter-spacing: .12rem;
+  font-family: "Droid Sans Mono", "Open Sans", helvetica, verdana, sans-serf;
   font-size: 30px;
   font-weight: 200;
-  color: #ecf0f1; }
+  color: white; }
   @media (min-width: 320px) and (max-width: 730px) {
     h1 {
       font-size: 18px; } }
