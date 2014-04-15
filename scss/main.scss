@@ -1,0 +1,82 @@
+
+/*
+
+	Sass Minifest
+
+*/
+@import"bourbon/bourbon";
+@import"structure";
+@import"colors";
+@import"typography";
+@import"font-awesome";
+
+@import"loader";
+@import"defaults";
+
+a{
+  text-decoration: none;
+}
+a.comments{
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  color: lighten($grey, 20%);
+  text-decoration: none;
+  background: darken($grey, 15%);
+  border-radius: 4px 4px 0 0;
+  padding: 5px 12px;
+  &:hover{
+    background: darken($grey, 35%);
+  }
+}
+
+div.post{
+  position: relative;
+  background: darken($grey, 10%);
+  border-top: 1px solid darken($grey, 0%);
+  border-bottom: 2px solid darken($grey, 25%);
+  padding: 5px 5px 0 15px;
+  min-height: 85px;
+}
+.title.row{
+
+  bottom: 0px;
+  position: relative;
+   &:after{
+    clear: both;
+    display: table;
+    content:"";
+  }
+}
+.info.row{
+margin: 0 auto;
+  bottom: 0px;
+  position: relative;
+ min-height: 40px;
+
+}
+
+h1{
+  font-family: "helvetica neue", "Open Sans", helvetica, verdana, sans-serf;
+  letter-spacing: .12rem;
+  font-size: 30px;
+  font-weight: 200;
+  color: orange;
+  &:hover{
+    color: lighten(orange, 15%);
+  }
+  @include breakpoint(baby-bear) {
+    font-size: 18px;
+  }
+  @include breakpoint(mama-bear) {
+    font-size: 25px;
+  }
+  @include breakpoint(papa-bear) {
+    font-size: 30px;
+  }
+
+}
+
+
+
+

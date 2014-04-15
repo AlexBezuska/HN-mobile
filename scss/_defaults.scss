@@ -1,0 +1,88 @@
+/* structure defaults
+*/
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    @include appearance(button);
+    cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+@include breakpoint(baby-bear) {
+.tablet{ display: none !important; }
+.full{ display: none !important; }
+}
+@include breakpoint(mama-bear) {
+.mobile{ display: none !important; }
+.full{ display: none !important; }
+}
+@include breakpoint(papa-bear) {
+
+.mobile{ display: none !important; }
+.tablet{ display: none !important; }
+}
+
+
+
+/* project defined:
+*/
+body {
+    background: darken($grey, 15%);
+    color: white;
+    height: 100%;
+}
+
+button, input{
+	outline: none;
+}
+
+.pageWidth{
+  @include breakpoint(baby-bear) {
+    width: 100%;
+  }
+  @include breakpoint(mama-bear) {
+    width: 95%;
+  }
+  @include breakpoint(papa-bear) {
+    width: 80%;
+  }
+}
+
+.page{
+  @extend .pageWidth;
+  poistion: relative;
+  margin: 0 auto;
+  background: white;
+}
+
+.col1-2{
+  @include breakpoint(baby-bear) {
+    width: 100%;
+  }
+}
+
+.content{
+  @extend .pageWidth;
+  margin: 0 auto 80px auto !important;
+}
+
+

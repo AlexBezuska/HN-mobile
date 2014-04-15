@@ -1,0 +1,25 @@
+$loader-speed: .6s;
+$loader-size: 100px;
+$ring-size: $loader-size * .048;
+.loader {
+  position: absolute;
+  margin: 20% 0 0 35%;
+  border-bottom: $ring-size solid transparent;
+  border-left: $ring-size solid transparent;
+  border-right: $ring-size solid $orange;
+  border-top: $ring-size solid $orange;
+  border-radius: 100%;
+  height: $loader-size;
+  width: $loader-size;
+  @include animation( rotate $loader-speed infinite linear );
+}
+
+@include keyframes(rotate) {
+  from {
+    @include transform( rotate( 0deg ) );
+    transform: rotate(0deg);
+  }
+  to {
+    @include transform( rotate( 359deg ) );
+  }
+}
