@@ -1707,22 +1707,24 @@ input[type="submit"] {
 /* project defined:
 */
 body {
-  background: #1a1615;
+  background: #050404;
   color: white;
   height: 100%; }
 
 button, input {
   outline: none; }
 
-@media (min-width: 320px) and (max-width: 730px) {
-  .pageWidth, .page, .content {
-    width: 100%; } }
-@media (min-width: 731px) and (max-width: 1024px) {
-  .pageWidth, .page, .content {
-    width: 95%; } }
-@media (min-width: 1025px) {
-  .pageWidth, .page, .content {
-    width: 80%; } }
+.pageWidth, .page, .content {
+  min-width: 320px; }
+  @media (min-width: 320px) and (max-width: 730px) {
+    .pageWidth, .page, .content {
+      width: 100%; } }
+  @media (min-width: 731px) and (max-width: 1024px) {
+    .pageWidth, .page, .content {
+      width: 95%; } }
+  @media (min-width: 1025px) {
+    .pageWidth, .page, .content {
+      width: 80%; } }
 
 .page {
   poistion: relative;
@@ -1743,9 +1745,9 @@ a.comments {
   position: absolute;
   right: 5px;
   bottom: 0px;
-  color: #7c6a65;
+  color: #635858;
   text-decoration: none;
-  background: #1a1615;
+  background: #050404;
   border-radius: 4px 4px 0 0;
   padding: 5px 12px; }
   a.comments:hover {
@@ -1753,11 +1755,13 @@ a.comments {
 
 div.post {
   position: relative;
-  background: #282220;
-  border-top: 1px solid #443a37;
+  background: #121010;
+  border-top: 1px solid #2d2828;
   border-bottom: 2px solid black;
   padding: 5px 5px 0 15px;
   min-height: 85px; }
+  div.post:hover {
+    background: #171515; }
 
 .title.row {
   bottom: 0px;
@@ -1771,22 +1775,20 @@ div.post {
   margin: 0 auto;
   bottom: 0px;
   position: relative;
-  min-height: 40px; }
+  min-height: 35px; }
 
 h1 {
   font-family: "helvetica neue", "Open Sans", helvetica, verdana, sans-serf;
   letter-spacing: .12rem;
   font-size: 30px;
   font-weight: 200;
-  color: orange; }
-  h1:hover {
-    color: #ffc04d; }
+  color: #ecf0f1; }
   @media (min-width: 320px) and (max-width: 730px) {
     h1 {
       font-size: 18px; } }
   @media (min-width: 731px) and (max-width: 1024px) {
     h1 {
-      font-size: 25px; } }
+      font-size: 18px; } }
   @media (min-width: 1025px) {
     h1 {
-      font-size: 30px; } }
+      font-size: 20px; } }
